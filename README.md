@@ -46,3 +46,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ## Commit notes:
 
 1. Read through all planning documentation, set up file structure and begin planning notes. Created User model, with some links to userController established.
+
+2. Thoughts and User models, routes and controllers created.
+
+3. Reactions schem(model) created
