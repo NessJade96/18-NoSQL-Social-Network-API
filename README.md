@@ -6,7 +6,7 @@ MongoDB is a popular choice for many social networks due to its speed with large
 
 ## User Setup:
 
-To use this at home, in your terminal run the following commands to invoke the application: -`npm i` to install packages. -`npm run seed` seeds the mongoDB. -`npm run start` starts the live server.
+To use this at home, in your terminal run the following commands to invoke the application: `npm i` to install packages,`npm run seed` seeds the mongoDB, then `npm run start` starts the live server.
 
 ## User story:
 
