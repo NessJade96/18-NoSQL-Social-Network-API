@@ -49,4 +49,6 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 2. Thoughts and User models, routes and controllers created.
 
-3. Reactions schem(model) created
+3. Reactions schema(model) created
+
+4. Added the reaciton api requests to the thought controllers.
