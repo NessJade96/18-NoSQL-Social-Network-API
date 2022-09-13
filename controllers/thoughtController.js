@@ -17,7 +17,10 @@ module.exports = {
 				};
 				res.json(thoughts);
 			})
-			.catch((err) => res.status(500).json(err), console.log(err));
+			.catch((err) => {
+				console.log(err);
+				return res.status(500).json(err);
+			});
 	},
 
 	// GET a single thought by _id
@@ -31,7 +34,10 @@ module.exports = {
 							.json({ message: 'No thought with that ID' })
 					: res.json(thought)
 			)
-			.catch((err) => res.status(500).json(err), console.log(err));
+			.catch((err) => {
+				console.log(err);
+				return res.status(500).json(err);
+			});
 	},
 
 	// POST Create a thought and pushes the created thought's _id to the associated user's thoughts array field
@@ -72,7 +78,10 @@ module.exports = {
 							.json({ message: 'No thought with this id!' })
 					: res.json(thought)
 			)
-			.catch((err) => res.status(500).json(err), console.log(err));
+			.catch((err) => {
+				console.log(err);
+				return res.status(500).json(err);
+			});
 	},
 
 	// DELETE a thought by _id
@@ -86,7 +95,10 @@ module.exports = {
 					: User.deleteMany({ _id: { $in: thought.users } })
 			)
 			.then(() => res.json({ message: 'Thought and users deleted!' }))
-			.catch((err) => res.status(500).json(err), console.log(err));
+			.catch((err) => {
+				console.log(err);
+				return res.status(500).json(err);
+			});
 	},
 
 	// POST Add an reaction to a thought
@@ -103,9 +115,12 @@ module.exports = {
 					? res.status(404).json({
 							message: 'No thought found with that ID :(',
 					  })
-					: res.json(student)
+					: res.json(thought)
 			)
-			.catch((err) => res.status(500).json(err), console.log(err));
+			.catch((err) => {
+				console.log(err);
+				return res.status(500).json(err);
+			});
 	},
 	// DELETE Remove reaction from a thought
 	removeReaction(req, res) {
@@ -123,8 +138,11 @@ module.exports = {
 					? res.status(404).json({
 							message: 'No thought found with that ID :(',
 					  })
-					: res.json(student)
+					: res.json(thought)
 			)
-			.catch((err) => res.status(500).json(err), console.log(err));
+			.catch((err) => {
+				console.log(err);
+				return res.status(500).json(err);
+			});
 	},
 };

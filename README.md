@@ -51,4 +51,6 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 3. Reactions schema(model) created
 
-4. Added the reaciton api requests to the thought controllers.
+4. Added the reaciton api requests to the thought controllers. Additionally I pushed the thought id to the user when a user creates a thought.
+
+5. Created the add and remove friends from the user controller, removed seed data that isnt required.
