@@ -6,10 +6,7 @@ MongoDB is a popular choice for many social networks due to its speed with large
 
 ## User Setup:
 
-in your terminal run the following commands to invoke the application:
-`npm i` to install packages
-`npm run seed` seeds the mongoDB
-`npm run start` starts the live server
+To use this at home, in your terminal run the following commands to invoke the application: -`npm i` to install packages. -`npm run seed` seeds the mongoDB. -`npm run start` starts the live server.
 
 ## User story:
 
@@ -35,8 +32,8 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Links:
 
-GitHub: https://github.com/NessJade96/18-NoSQL-Social-Network-API
-Walkthrough video:
+-   GitHub: https://github.com/NessJade96/18-NoSQL-Social-Network-API
+-   Walkthrough video:
 
 ## planning notes:
 
@@ -48,4 +45,4 @@ Walkthrough video:
 
 ## Commit notes:
 
-1. Read through all planning documentation, set up file structure and begin planning notes.
+1. Read through all planning documentation, set up file structure and begin planning notes. Created User model, with some links to userController established.
