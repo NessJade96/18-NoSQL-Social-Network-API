@@ -6,8 +6,8 @@ const thoughtSchema = new Schema(
 		thoughtText: {
 			type: String,
 			required: true,
-			maxlength: 280,
 			minlength: 1,
+			maxlength: 280,
 		},
 		// Use a getter method to format the timestamp on query
 		createdAt: {

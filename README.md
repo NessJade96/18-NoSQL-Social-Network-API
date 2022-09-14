@@ -14,34 +14,22 @@ AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
 
-## Acceptance Criteria (delete before submitting!!)
-
-GIVEN a social network API
-WHEN I enter the command to invoke the application
-THEN my server is started and the Mongoose models are synced to the MongoDB database
-WHEN I open API GET routes in Insomnia for users and thoughts
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete users and thoughts in my database
-WHEN I test API POST and DELETE routes in Insomnia
-THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
-
 ## Screenshots:
 
 ![image](./assets/images/)
 
 ## Links:
 
--   GitHub: https://github.com/NessJade96/18-NoSQL-Social-Network-API
--   Walkthrough video:
+- GitHub: https://github.com/NessJade96/18-NoSQL-Social-Network-API
+- Walkthrough video:
 
 ## planning notes:
 
 1. Read through the assignment instructions and create the MVC folder structure.
-    - set up package json and user setup instructions on starting application.
-    - following the online guide provided to set up and link models (Users, Thoughts, Reactions) and API routes (GET, POST, PUT, DELETE).
-    - check out the bonus questions and impliment if given time
-    - ensure all criteria is complete before filming the walkthrough video.
+   - set up package json and user setup instructions on starting application.
+   - following the online guide provided to set up and link models (Users, Thoughts, Reactions) and API routes (GET, POST, PUT, DELETE).
+   - check out the bonus questions and impliment if given time
+   - ensure all criteria is complete before filming the walkthrough video.
 
 ## Commit notes:
 
@@ -53,4 +41,11 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 4. Added the reaciton api requests to the thought controllers. Additionally I pushed the thought id to the user when a user creates a thought.
 
-5. Created the add and remove friends from the user controller, removed seed data that isnt required.
+5. Created the add and remove friends from the user controller, removed seed data that isnt required. api/users and api/thoughts base routes are working in insomnia
+
+\*\* okay so you need to check you have met each requirement + bonuses, then go through and seed the DB in insomnia with api calls.
+Then once all checks are thorough - record walkthrough video.
+
+THOUGHT (and REACTION schema) contorller add: Use a getter method to format the timestamp on query (createdAt) AND -
+THOUGHT Schema Settings:
+User controller: finish function(getSingleUser) !! still broken
