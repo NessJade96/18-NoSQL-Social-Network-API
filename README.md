@@ -28,7 +28,7 @@ SO THAT my website can handle large amounts of unstructured data
 1. Read through the assignment instructions and create the MVC folder structure.
    - set up package json and user setup instructions on starting application.
    - following the online guide provided to set up and link models (Users, Thoughts, Reactions) and API routes (GET, POST, PUT, DELETE).
-   - check out the bonus questions and impliment if given time
+   - check out the bonus questions and implement if given time
    - ensure all criteria is complete before filming the walkthrough video.
 
 ## Commit notes:
