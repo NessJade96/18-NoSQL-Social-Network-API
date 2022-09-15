@@ -1,4 +1,5 @@
-const { Schema, model } = require('mongoose');
+const {Schema, model} = require('mongoose');
+const Reaction = require('./Reaction');
 
 // Schema to create a thought model
 const thoughtSchema = new Schema(
@@ -18,16 +19,12 @@ const thoughtSchema = new Schema(
 			type: String,
 			required: true,
 		},
-		reactions: [
-			{
-				type: Schema.Types.ObjectId,
-				ref: 'Reactions',
-			},
-		],
+		reactions: [Reaction],
 	},
 	{
 		// AS ABOVE: Use a getter method to format the timestamp on query
 		timestamps: true,
+		id: false,
 		toJSON: {
 			getters: true,
 			virtuals: true,

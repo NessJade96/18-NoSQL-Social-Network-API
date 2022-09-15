@@ -6,7 +6,7 @@ MongoDB is a popular choice for many social networks due to its speed with large
 
 ## User Setup:
 
-To use this at home, in your terminal run the following commands to invoke the application: `npm i` to install packages,`npm run seed` seeds the mongoDB, then `npm run start` starts the live server.
+To use this at home, in your terminal run the following commands to invoke the application: `npm i` to install packages, then `npm run start` starts the live server.
 
 ## User story:
 
@@ -16,12 +16,12 @@ SO THAT my website can handle large amounts of unstructured data
 
 ## Screenshots:
 
-![image](./assets/images/)
+![image](./assets/images/Insomnia.PNG)
 
 ## Links:
 
 - GitHub: https://github.com/NessJade96/18-NoSQL-Social-Network-API
-- Walkthrough video:
+- Walkthrough video: https://drive.google.com/file/d/1PHb1SMfIqhY14i3qDKqA4J9a5DNpTGvG/view
 
 ## planning notes:
 
@@ -43,9 +43,7 @@ SO THAT my website can handle large amounts of unstructured data
 
 5. Created the add and remove friends from the user controller, removed seed data that isnt required. api/users and api/thoughts base routes are working in insomnia
 
-\*\* okay so you need to check you have met each requirement + bonuses, then go through and seed the DB in insomnia with api calls.
-Then once all checks are thorough - record walkthrough video.
+6. Went through all the API route requirements and ensured they were all working, ensuring all critira is met. I ran into a small problem with my reactions schema - I didnt import that into the Thought model which was causing problems for me. Once this was sorted, I was able to make the thought reactions api calls to create and delete.
 
-THOUGHT (and REACTION schema) contorller add: Use a getter method to format the timestamp on query (createdAt) AND -
-THOUGHT Schema Settings:
-User controller: finish function(getSingleUser) !! still broken
+Thank you :)
+By Vanessa
